@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-image: url('../assets/images/Fondo.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.animate-slow-bounce {
+    animation-duration: 12s; /* Cambia el valor a lo que desees */
+  }
+
+  .gradient-inverse{
+    background: linear-gradient(to bottom,  
+    rgb(131, 79, 47)0%,     /* Negro sólido para que la transición sea natural */  
+    rgba(50, 30, 20, 0.9) 30%,  /* Un marrón oscuro suave */  
+    rgba(120, 60, 30, 0.8) 70%,  /* Un tono más cálido parecido a la hoja de maíz */  
+    rgb(131, 79, 47) 100%  /* Naranja fuerte evocando el color de los tamales */  
+  );
+  
+  
+
+  }

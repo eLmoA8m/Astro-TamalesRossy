@@ -1,0 +1,90 @@
+---
+import tamal from '../assets/tamales.svg'
+---
+
+<div class="bg-gradient-to-r from-black via-black to-orange-950 py-10 relative overflow-hidden">
+  
+
+  <h2 class="text-4xl md:text-5xl font-display text-center mb-4 grid grid-cols-1">
+    <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400">Precios</span>
+    <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400 -mt-8 ">_____</span>
+    <span class="text-gray-300 text-sm text-center mt-5">Ofrecemos los mejores precios para que disfrutes de nuestros deliciosos tamales</span>
+  </h2>
+  
+
+
+<div class="grid grid-1 sm:grid-cols-3 text-center gap-10 w-[90%] mx-auto">
+ 
+  <div class="relative bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl p-6 flex flex-col items-center justify-between shadow-xl border border-white/20 hover:border-white/40 hover:scale-105 transition-transform duration-300">
+   
+    <div class="flex flex-col items-center text-center mb-4">
+      <div class="bg-white/30 p-3 rounded-full mb-3">
+        <img src={tamal.src} alt="Tamales" class="w-10 h-10" />
+
+
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h11M9 21V3m6 18h6M15 3h6"></path>
+        </svg>
+      </div>
+      <h3 class="text-white font-extrabold text-2xl drop-shadow-lg">Media Docena</h3>
+    </div>
+  
+    <!-- Descripción -->
+    <p class="text-white/90 text-center mb-4 text-lg">6 Tamales a elegir</p>
+  
+    <!-- Precio -->
+    <div class="bg-white/20 px-6 py-3 rounded-xl text-center shadow-lg w-full">
+      <p class="text-white text-4xl font-bold">$50</p>
+      <p class="text-white/80 text-sm">Precio total</p>
+    </div>
+  </div>
+  
+  
+
+  <div class="relative bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-2xl p-6 flex flex-col items-center justify-between shadow-xl border border-white/20 hover:border-white/40 hover:scale-105 transition-transform duration-300">
+    <!-- Etiqueta en la esquina superior derecha -->
+    <span class="absolute top-2 right-2 bg-red-600 text-white px-3 py-1 rounded-bl-lg text-sm font-semibold shadow-md sm:w-auto">
+      Recomendado 🔥
+    </span>
+  
+    <!-- Encabezado con icono -->
+    <div class="flex flex-col items-center text-center mb-4">
+      <div class="bg-white/30 p-3 rounded-full mb-3">
+        <img src={tamal.src} alt="Tamales" class="w-10 h-10" />
+          
+
+      </div>
+      <h3 class="text-white font-extrabold text-2xl drop-shadow-lg">Docena</h3>
+    </div>
+  
+    <!-- Descripción -->
+    <p class="text-white/90 text-center mb-4 text-lg">12 Tamales a elegir</p>
+  
+    <!-- Precio -->
+    <div class="bg-white/20 px-6 py-3 rounded-xl text-center shadow-lg w-full">
+      <p class="text-white text-4xl font-bold">$95</p>
+      <p class="text-white/80 text-sm">Precio total</p>
+    </div>
+</div>
+
+<div class="relative bg-gradient-to-r from-red-500 to-red-600 rounded-2xl p-6 flex flex-col items-center justify-between shadow-xl border border-white/20 hover:border-white/40 hover:scale-105 transition-transform duration-300">
+  <!-- Encabezado con icono -->
+  <div class="flex flex-col items-center text-center mb-4">
+    <div class="bg-white/30 p-3 rounded-full mb-3">
+      <img src={tamal.src} alt="Tamales" class="w-10 h-10" />
+      
+    </div>
+    <h3 class="text-white font-extrabold text-2xl drop-shadow-lg">Ciento</h3>
+  </div>
+
+  <!-- Descripción -->
+  <p class="text-white/90 text-center mb-4 text-lg">1000 Tamales</p>
+
+  <!-- Precio -->
+  <div class="bg-white/20 px-6 py-3 rounded-xl text-center shadow-lg w-full">
+    <p class="text-white text-4xl font-bold">$1000</p>
+    <p class="text-white/80 text-sm">Precio total</p>
+  </div>
+</div>
+
+
+</div>

@@ -1,0 +1,97 @@
+---
+
+import tamalHD from '../assets/images/tamalHD.jpg'
+---
+
+<div class="bg-black">
+    <div class="relative bg-black">
+        <!-- Capa de imagen con brillo reducido -->
+        <div 
+            class="absolute inset-0 w-full h-full bg-cover bg-center brightness-50" 
+            style={`background-image: url(${tamalHD.src})`}>
+        </div>
+        
+        <!-- Contenido superpuesto que no se ve afectado por el brightness -->
+        <div class="relative z-10 w-full max-h-[200px]">
+            <p class="py-15 flex items-center justify-center h-full w-full text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400 text-5xl md:text-6xl font-bold mb-2">
+                Vísitanos
+            </p>
+        </div>
+    </div>
+     <!-- Aplica espacio entre los divs con space-y-8 -->
+<div class="w-full sm:w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-4 grid-rows-4 gap-8 py-20 px-10 text-white">
+    <div class="col-span-2 row-span-4 bg-[#2A2A2A] rounded-2xl p-8 shadow-xl py-10">
+        <h2 class="text-2xl font-bold mb-6 text-orange-500">Información de contacto</h2>
+    
+        <!-- Aplica espacio entre los divs con space-y-8 -->
+        <div class="space-y-8">
+            <div class="flex items-center gap-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="orange" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-orange-500">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+                <div>
+                    <p class="text-gray-400">Dirección</p>
+                    <p class="text-white">Noche buena 160</p>
+                </div>
+            </div>
+            
+            
+    
+            <div class="flex items-center gap-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="orange" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                </svg>
+                <div>
+                <p class="text-gray-400">Telefono</p>
+                <p>8119613974</p>
+
+                </div>
+            </div>
+    
+            <div class="flex items-center gap-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="orange" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-clock-hour-4">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    <path d="M12 12l3 2" />
+                    <path d="M12 7v5" />
+                </svg>
+                <div class="horarios">
+                    <p class="text-gray-400">Horarios</p>
+                    <p class="text-white font-light">Lunes a Viernes: 7:00 AM - 3:00 PM</p>
+                    <p>Sábado: 7:00 AM - 4:00 PM</p>
+                    <p>Domingo: 7:00 AM - 2:00 PM</p>
+                </div>
+           
+            </div>
+            <!-- Order CTA -->
+<div class="bg-orange-600 rounded-2xl p-8 shadow-xl">
+    <h3 class="text-2xl font-bold mb-2">¡Haz tu pedido!</h3>
+    <p class="text-orange-100 mb-4">Pedidos especiales con 24 horas de anticipación</p>
+    <button 
+      class="w-full bg-white text-orange-600 py-3 px-6 rounded-xl font-semibold 
+             hover:bg-orange-100 transition-colors duration-200 flex items-center justify-center gap-2"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" 
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      Ordenar por WhatsApp
+    </button>
+  </div>
+        </div>
+    </div>
+    
+    <div class="col-span-2 row-span-4 col-start-1 sm:col-start-3 flex flex-col justify-center items-center bg-[#2A2A2A] rounded-2xl p-8 shadow-xl py-10">
+    
+        <h2 class="text-2xl font-bold mb-6 text-orange-500">Ubícanos</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1069.2405160721291!2d-100.07696255422324!3d25.65530989722194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662dd2def11bdff%3A0x2ae0c554a70eb956!2sNoche%20Buena%20160%2C%20Colinas%20de%20San%20Juan(Colinas%20de%20La%20Morena)%2C%2067254%20Cdad.%20Benito%20Ju%C3%A1rez%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1742627008930!5m2!1ses-419!2smx" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+</div>
+

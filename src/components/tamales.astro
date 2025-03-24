@@ -1,0 +1,155 @@
+---
+import { Image } from 'astro:assets';
+import tamalImage from '../assets/tamales.svg'; // Update this path to your actual image
+import tamalCarne from '../assets/images/tamalesCarne.jpg'
+import tamalFrijol from '../assets/images/tamalesFrijol.jpg'
+import tamalPollo from '../assets/images/tamalesPollo.jpg'
+import tamalesQueso from '../assets/images/tamalesQueso.jpg'
+import tamalMenu from '../assets/images/tamalMenu.jpg'
+---
+<div class="py-5  bg-gradient-to-b gradient-inverse">
+  <div class="relative bg-black">
+    <!-- Capa de imagen con brillo reducido -->
+    <div 
+    class="absolute inset-0 w-[80%] mx-auto h-full bg-cover bg-center brightness-50" 
+    style={`
+        background-image: url(${tamalMenu.src});
+        mask-image: linear-gradient(to right, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+        -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+    `}
+>
+</div>
+    
+    <!-- Contenido superpuesto que no se ve afectado por el brightness -->
+    <div class="relative z-10 w-full max-h-[200px]">
+        <p class="py-15 flex items-center justify-center h-full w-full text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400 text-5xl md:text-6xl font-bold mb-2">
+          Menú
+        </p>
+    </div>
+</div>
+    <div class="grid sm:grid-cols-4 gap-4 max-w-[80%] mx-auto py-10">
+        <!-- Primera tarjeta -->
+        <div class="w-full  from-black to-orange-400 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-orange-100">
+            <div class="relative h-48 overflow-hidden bg-orange-50">
+              <Image 
+                src={tamalCarne} 
+                alt="Delicioso tamal" 
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                width={500}
+                height={300}
+              />
+              <div class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg text-sm font-bold">
+                Tradicional
+              </div>
+            </div>
+            
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-orange-100 mb-2">Tamal de Carne</h3>
+              <p class="text-white text-2xl mb-4">
+                Tamal casero de maíz con relleno de cerdo en adobo, envuelto en hoja de maíz. ¡Sabor tradicional!
+              </p>
+             
+              
+              <div class="flex justify-between items-center">
+                <span class="text-orange-600 font-bold text-lg">$10</span>
+                <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+                  Ordenar
+                </button>
+              </div>
+            </div>
+        </div>
+
+        <!-- Segunda tarjeta -->
+        <div class="w-full from-black to-orange-400 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-orange-100">
+            <div class="relative h-48 overflow-hidden bg-orange-50">
+              <Image 
+                src={tamalPollo} 
+                alt="Delicioso tamal" 
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                width={400}
+                height={300}
+              />
+              <div class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg text-sm font-bold">
+                Tradicional
+              </div>
+            </div>
+            
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-orange-100 mb-2">Tamal de Pollo</h3>
+              <p class="text-white text-2xl mb-4">
+                Tamal casero de maíz con jugoso pollo en mole, envuelto en hoja de maíz. ¡Sabor auténtico!
+              </p>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-orange-600 font-bold text-lg">$10</span>
+                <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+                  Ordenar
+                </button>
+              </div>
+            </div>
+        </div>
+
+        <!-- Tercera tarjeta -->
+        <div class="w-full from-black to-orange-400 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-orange-100">
+            <div class="relative h-48 overflow-hidden bg-orange-50">
+              <Image 
+                src={tamalFrijol} 
+                alt="Delicioso tamal" 
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                width={400}
+                height={300}
+              />
+              <div class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg text-sm font-bold">
+                Tradicional
+              </div>
+            </div>
+            
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-orange-100 mb-2">Tamal de Frijol</h3>
+              <p class="text-white text-2xl mb-4">
+                Tamal de maíz relleno de frijoles refritos, envuelto en hoja de maíz. Simple y delicioso.
+              </p>
+              
+              <div class="flex justify-between items-center">
+                <span class="text-orange-600 font-bold text-lg">$10</span>
+                <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+                  Ordenar
+                </button>
+              </div>
+            </div>
+        </div>
+
+
+  <!-- Cuarta-->
+  <div class="w-full from-black to-orange-400 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-orange-100">
+    <div class="relative h-48 overflow-hidden bg-orange-50">
+      <Image 
+        src={tamalesQueso} 
+        alt="Delicioso tamal" 
+        class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+        width={400}
+        height={300}
+      />
+      <div class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 rounded-bl-lg text-sm font-bold">
+        Tradicional
+      </div>
+    </div>
+    
+    <div class="p-5">
+      <h3 class="text-xl font-bold text-orange-100 mb-2">Tamal de Queso</h3>
+      <p class="text-white text-2xl mb-4">
+        Suave tamal de maíz con queso derretido, envuelto en hoja de maíz. ¡Perfecto para los amantes del queso!
+      </p>
+      
+      <div class="flex justify-between items-center">
+        <span class="text-orange-600 font-bold text-lg">$10</span>
+        <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+          Ordenar
+        </button>
+      </div>
+    </div>
+</div>
+
+
+    </div>
+</div>
